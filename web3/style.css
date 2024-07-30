@@ -1,0 +1,595 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.logo{
+    width: 70px;
+    
+}
+.logo1{
+    width: 120px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-left: 30px;
+    
+}
+.overlay{
+    position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 130vh;
+  background: url('batman3.jpg') center center no-repeat;
+  background-size: cover;
+  z-index: -100;
+}
+nav{
+    width: 100% ; 
+    background: black;
+    padding: 10px 10px;
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    position: relative;
+    
+}
+nav ul{
+    width: 100%;
+    text-align: right;
+    
+    
+}
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 30px 20px;
+    
+    
+}
+nav ul li a {
+    color: red;
+    text-decoration: none;
+    
+    
+}
+nav ul li a:hover{
+  color: magenta;
+
+}
+h1 {
+  font-size: 20px;
+}
+
+.sub-menu-wrap {
+  display: none; /* Initially hidden */
+  position: absolute; /* Positioned relative to its parent */
+  top: 100%; /* Below the nav bar */
+  right: 0; /* Aligned to the right edge */
+  width: 300px; /* Define desired width */
+  background-color: black; /* Set background color */
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  box-sizing: border-box; /* Ensure padding doesn't affect width */
+  padding: 10px; /* Spacing around sub-menu items */
+}
+
+.sub-menu-wrap.open-menu { /* When sub-menu is open */
+  display: block;
+}
+
+.sub-menu-wrap a { /* Styles for sub-menu links */
+  display: block; /* Display as blocks */
+  padding: 5px 10px; /* Adjust padding */
+  color: #333; /* Link color */
+  text-decoration: none;
+}
+
+.sub-menu-wrap a:hover { /* Hover effects for links */
+  background-color: darkred; /* Subtle background color on hover */
+}
+#accueil {
+  text-align: left;
+  padding: 60px 0;
+  background-color:goldenrod;
+  font-size: 45px; 
+  
+}
+
+#accueil h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+    text-align: center;
+    color: azure;   
+}
+
+#accueil p {
+  font-size: 28px;
+  line-height: 1.5em;
+  margin-bottom: 100px;
+    font-weight: bold;
+  
+}
+
+#accueil a {
+  font-size: 36px;
+  text-decoration: none;
+  color: whitesmoke;
+  padding-left: 600px;
+}
+
+#accueil t {
+  font-size: 28px;
+  margin-top: 30px;
+  line-height: 1.5em;
+    font-weight: bold;
+}
+
+}
+
+/* Section "Produits" */
+
+#boutique {
+  padding: 50px 0;
+ 
+}
+
+#boutique h2 {
+  font-weight: bold;
+  text-align: center;
+  height: 150px;
+  color: azure;
+}
+
+    
+
+#boutique ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+#boutique li {
+  width: 300px;
+  margin: 10px;
+  text-align: center;
+  border: 1px solid white;
+  padding: 20px;
+  border-radius: 10px;
+    color: black;
+    background-color: aliceblue;
+}
+
+#boutique img {
+  width: 200px;
+  margin-bottom: 10px;
+}
+
+#boutique h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+#boutique p {
+  font-size: 16px;
+  line-height: 1.5em;
+  margin-bottom: 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 790vh;
+  background: url('1.jpg') center center no-repeat;
+  background-size: cover;
+  z-index: -100;
+}
+
+#boutique a {
+  font-size: 16px;
+  text-decoration: none;
+  color: black;
+}
+
+
+
+
+#heartless {
+  padding: 50px 0;
+ 
+}
+
+#heartless h2 {
+  font-weight: bold;
+  text-align: center;
+  height: 150px;
+  color: azure;
+}
+
+    
+
+#heartless ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+#heartless li {
+  width: 300px;
+  margin: 10px;
+  text-align: center;
+  border: 1px solid white;
+  padding: 20px;
+  border-radius: 10px;
+    color: black;
+    background-color: aliceblue;
+}
+
+#heartless img {
+  width: 200px;
+  margin-bottom: 10px;
+}
+
+#heartless h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+#heartless p {
+  font-size: 16px;
+  line-height: 1.5em;
+  margin-bottom: 10px;
+}
+
+#heartless a {
+  font-size: 16px;
+  text-decoration: none;
+  color: black;
+}
+
+
+
+#peace {
+  padding: 50px 0;
+ 
+}
+
+#peace h2 {
+  font-weight: bold;
+  text-align: center;
+  height: 150px;
+  color: azure;
+}
+
+    
+
+#peace ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+#peace li {
+  width: 300px;
+  margin: 10px;
+  text-align: center;
+  border: 1px solid white;
+  padding: 20px;
+  border-radius: 10px;
+    color: black;
+    background-color: aliceblue;
+}
+
+#peace img {
+  width: 200px;
+  margin-bottom: 10px;
+}
+
+#peace h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+#peace p {
+  font-size: 16px;
+  line-height: 1.5em;
+  margin-bottom: 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 600vh;
+  background: url('1.jpg') center center no-repeat;
+  background-size: cover;
+  z-index: -100;
+}
+
+#peace a {
+  font-size: 16px;
+  text-decoration: none;
+  color: black;
+}
+
+
+
+#love {
+  padding: 50px 0;
+ 
+}
+
+#love h2 {
+  font-weight: bold;
+  text-align: center;
+  height: 150px;
+  color: azure;
+}
+
+    
+
+#love ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+#love li {
+  width: 300px;
+  margin: 10px;
+  text-align: center;
+  border: 1px solid white;
+  padding: 20px;
+  border-radius: 10px;
+    color: black;
+    background-color: aliceblue;
+}
+
+#love img {
+  width: 200px;
+  margin-bottom: 10px;
+}
+
+#love h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+#love p {
+  font-size: 16px;
+  line-height: 1.5em;
+  margin-bottom: 10px;
+
+}
+
+#love a {
+  font-size: 16px;
+  text-decoration: none;
+  color: black;
+}
+
+
+
+
+#pain {
+  padding: 50px 0;
+ 
+}
+
+#pain h2 {
+  font-weight: bold;
+  text-align: center;
+  height: 150px;
+  color: azure;
+}
+
+    
+
+#pain ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+#pain li {
+  width: 300px;
+  margin: 10px;
+  text-align: center;
+  border: 1px solid white;
+  padding: 20px;
+  border-radius: 10px;
+    color: black;
+    background-color: aliceblue;
+}
+
+#pain img {
+  width: 200px;
+  margin-bottom: 10px;
+}
+
+#pain h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+#pain p {
+  font-size: 16px;
+  line-height: 1.5em;
+  margin-bottom: 10px;
+}
+
+#pain a {
+  font-size: 16px;
+  text-decoration: none;
+  color: black;
+}
+/* Section "Contact" */
+#contact {
+  padding: 50px 0;
+   background: url('batman2.jpg') center center no-repeat;
+  background-size: cover;
+  z-index: -100;
+  width: 100%;
+  height: 260vh;
+  position: absolute;
+}
+
+#contact h2 {
+     margin-left: auto;
+  margin-right: auto;
+  font-size: 15px;
+  text-align: center;
+  margin-bottom: 20px;
+  color: darkgoldenrod;
+  padding: 10px 40px;
+  margin-right: 30 px;
+  font-weight: 600;
+  width: 200px;
+    
+}
+
+#contact z {
+  margin-left: 350px;
+  font-size: 19px;
+  margin-bottom: 40px;
+  color: darkgoldenrod;
+  padding: 10px 40px;
+
+  font-weight: 600;
+  width: 550px;
+}
+
+/* Coordonnées */
+.coordonnees {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.coordonnees h3 {
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: goldenrod;
+  padding: 10px 20px;
+  margin-right: 30 px;
+  font-weight: 600;
+  width: 199px;
+}
+
+.coordonnees ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  color: goldenrod;
+  padding: 10px 40px;
+  margin-right: 30 px;
+  font-weight: 600;
+  width: 550px;
+}
+
+.coordonnees ul li {
+  margin-bottom: 10px;
+  font-size: 16px;
+  line-height: 1.5;
+    
+}
+
+.coordonnees ul li i {
+  margin-right: 10px;
+  color: #333;
+}
+
+
+/* Réseaux sociaux */
+.reseaux-sociaux {
+    padding: 20px;
+  text-align: center;
+    width: 60%;
+  max-width: 500px;
+    border-radius: 10px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    margin-left: 450px;
+   
+}
+
+.reseaux-sociaux h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 18px;
+    color: red;
+}
+
+.reseaux-sociaux li {
+  display: inline-flex;
+  margin: 10px;
+  list-style: none;
+    cursor: pointer;
+  
+}
+
+.reseaux-sociaux li img {
+  width: 40px;
+  height: 40px;
+  border-radius: 40%;
+    margin-right: 200px;
+}
+
+.reseaux-sociaux li a {
+  text-decoration: none;
+  color:darkred;
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+    cursor: pointer;
+  
+}
+.reseaux-sociaux  li a:hover {
+  color: black;
+}
+
+.reseaux-sociaux  li i {
+  margin-right: 80px;
+}
+
+/* Pied de page */
+footer {
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 15px;
+  text-align: center;
+  margin-bottom: 20px;
+  color: black;
+  padding: 10px 40px;
+  margin-right: 30 px;
+  background-color: darkred;
+  font-weight: 600;
+  width: 200px;
+}
+
+footer ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+

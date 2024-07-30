@@ -1,0 +1,461 @@
+*, * ::before, *::after{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Styles globaux */
+body {
+  font-family: American Typewriter, serif
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+  background-color: #fff;
+}
+body1 {
+  font-family: Georgia, serif;;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+  background-color: #fff;
+}
+body2 {
+  font-family: DejaVu Sans Mono, monospace
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+  background-color: #fff;
+}
+/* c est la photo au dessus de la 1 er partis */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 110vh;
+  background: url('cv3.jpg') center center no-repeat;
+  background-size: cover;
+  z-index: -100;
+   
+}
+
+/* En-tête */
+header {
+  max-width: 95%;
+  margin-right: auto;
+  margin-left: auto;
+}
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  width: 100%;
+  padding: 30px 0 10px;
+   
+}
+
+nav .logo {
+  width: 100px;
+   
+}
+header nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+nav ul{
+  flex:1;
+  display:flex;
+  justify-content: flex-end;
+  padding-right: 20px;
+   
+}
+
+nav ul li {
+  list-style: none;
+  margin-left: 20px;
+   
+}
+nav ul li a{
+  text-decoration: none;
+  color: brown;
+  font-size: 1.2rem;
+  transition: color .3s;
+   
+}
+nav ul li a:hover{
+  color: magenta;
+   
+   
+}
+
+/* Section "Texte" */
+.text {
+  padding: 20px 0;
+  color: beige;
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: auto;
+   
+   
+}
+
+.text h1 {
+  font-size: 35px;
+  line-height: 2;
+  margin-bottom: 1rem;
+  border: 1px solid white ;
+  color: black;
+  padding: 10px 40px;
+  margin-right: 30 px;
+  background-color: chocolate;
+  font-weight: 600;
+  width: 550px;
+  
+}
+
+.text p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  letter-spacing: 1px;
+  margin-bottom: 2rem;
+  border: 1px solid white ;
+  color: black;
+ padding: 10px 20px;
+  margin-right: 30px;
+  background-color: chocolate;
+  
+}
+
+.text a {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 1.25rem;
+  border: 1px solid white ;
+  color: cadetblue;
+  padding: 10px 20px;
+  margin-right: 30 px;
+  background-color: crimson;
+  font-weight: 600;
+   
+}
+.text t {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 20px;
+  border: 1px solid white ;
+  color: dodgerblue;
+  padding: 10px 20px;
+  margin-right: 30 px;
+  background-color: crimson;
+  font-weight: 600;
+   
+}
+.text a1 img {
+ width: 100px; /* Ajustez la taille selon vos besoins */
+ margin-right: 10px;
+}
+.text a:hover {
+  background-color: #ccc;
+}
+
+/* Section "Produits" */
+#produits {
+  background-color: #f7f7f7;
+  padding: 50px 0;
+  
+}
+
+#produits h1 { 
+    text-align: center;
+  margin-bottom: 20px;
+    width: 100%;
+  height: 254vh;
+  position: absolute;
+  background: url('cv3.jpg') center center no-repeat;
+  background-size: cover;
+  z-index: -100;
+    font-size: 1.25rem;
+  color: darkred;
+  padding: 10px 40px;
+  margin-right: 30 px;
+  font-weight: 600;
+    font-weight:bold;
+
+    
+}
+#produits h2 {
+    text-align: center;
+    background-color: #f7f7f7;
+    padding: 10px 10;
+   color: chocolate;
+  max-width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: auto;
+   
+  
+  
+
+    
+}
+#produits h4 {
+  text-align-last: center;
+  margin-bottom: 1rem;
+  font-weight:bold;
+  width: 80%;
+  font-size: 1.25rem;
+  color: darkred;
+  padding: 10px 40px;
+  font-weight: 600;
+     margin-left: auto;
+  margin-right: auto;
+    background-color: #f7f7f7;
+
+}
+
+#produits ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+#produits ul li {
+  width: 300px;
+  margin: 10px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  text-align: center;
+}
+
+#produits ul li img {
+  width: 150px;
+  margin-bottom: 10px;
+}
+
+#produits ul li h3 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+
+#produits ul li p {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+#produits ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+#produits ul li a:hover {
+  color: #777;
+}
+
+/* Section "A propos" */
+
+@media (max-width: 768px) {
+  #propos img {
+    width: 100%;
+  }
+}
+/* Section "A propos" */
+#propos {
+  padding: 50px 0;
+  background: url('cv.jpg') center center no-repeat;
+  background-size: cover;
+  z-index: -100;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+text-align: center;
+   color: chocolate;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: auto;
+   
+}
+#propos h2{
+ text-align: center;
+    font-size: 25px;
+    background-color: #f7f7f7;
+    padding: 10px 10;
+   color: chocolate;
+  max-width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: auto;
+    width: 150px;
+}
+#propos ul{
+font-size: 19px;
+ text-align: center;
+    padding: 10px 10;
+   color: floralwhite;
+  max-width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+    margin-bottom: auto;
+    font-weight: 900;
+
+}
+/* Section "Contact" */
+#contact {
+  padding: 50px 0;
+   background: url('cv5.jpg') center center no-repeat;
+  background-size: cover;
+  z-index: -100;
+     width: 100%;
+  height: 260vh;
+  position: absolute;
+}
+
+#contact h2 {
+     margin-left: auto;
+  margin-right: auto;
+  font-size: 15px;
+  text-align: center;
+  margin-bottom: 20px;
+  color: white;
+  padding: 10px 40px;
+  margin-right: 30 px;
+  background-color: chocolate;
+  font-weight: 600;
+  width: 200px;
+    
+}
+
+#contact z {
+  margin-left: 350px;
+  font-size: 19px;
+  margin-bottom: 40px;
+  color: black;
+  padding: 10px 40px;
+  background-color: chocolate;
+  font-weight: 600;
+  width: 550px;
+}
+
+/* Coordonnées */
+.coordonnees {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.coordonnees h3 {
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: white;
+  padding: 10px 20px;
+  margin-right: 30 px;
+  background-color: chocolate;
+  font-weight: 600;
+  width: 199px;
+}
+
+.coordonnees ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  color: black;
+  padding: 10px 40px;
+    background-color: chocolate;
+  margin-right: 30 px;
+  font-weight: 600;
+  width: 550px;
+}
+
+.coordonnees ul li {
+  margin-bottom: 10px;
+  font-size: 16px;
+  line-height: 1.5;
+    
+}
+
+.coordonnees ul li i {
+  margin-right: 10px;
+  color: #333;
+}
+
+
+/* Réseaux sociaux */
+.reseaux-sociaux {
+    padding: 20px;
+  text-align: center;
+    width: 60%;
+  max-width: 500px;
+    border-radius: 10px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    margin-left: 450px;
+   
+}
+
+.reseaux-sociaux h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 18px;
+    color: white;
+}
+
+.reseaux-sociaux li {
+  display: inline-flex;
+  margin: 10px;
+  list-style: none;
+    cursor: pointer;
+  
+}
+
+.reseaux-sociaux li img {
+  width: 40px;
+  height: 40px;
+  border-radius: 40%;
+    margin-right: 200px;
+}
+
+.reseaux-sociaux li a {
+  text-decoration: none;
+  color:black;
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+    cursor: pointer;
+  
+}
+.reseaux-sociaux  li a:hover {
+  color: black;
+}
+
+.reseaux-sociaux  li i {
+  margin-right: 80px;
+}
+
+/* Pied de page */
+footer {
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 15px;
+  text-align: center;
+  margin-bottom: 20px;
+  color: black;
+  padding: 10px 40px;
+  margin-right: 30 px;
+  background-color: cadetblue;
+  font-weight: 600;
+  width: 200px;
+}
+
+footer ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+
+    
+   
